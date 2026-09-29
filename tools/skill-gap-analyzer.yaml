@@ -1,14 +1,18 @@
-name: "skill-gap-analyzer"
+name: skill-gap-analyzer
+version: 1.0.0
 description: "Computes overlap percentage between candidate competencies and job requirements"
-version: "0.1.0"
-runtime:
-  language: "python"
-  entrypoint: "skill_gap_analyzer.py"
-parameters:
-  type: "object"
+input_schema:
+  type: object
   properties:
     skills_json:
-      type: "string"
+      type: string
       description: "JSON with candidate_skills and required_skills lists"
   required:
-    - "skills_json"
+    - skills_json
+implementation:
+  type: script
+  path: skill_gap_analyzer.py
+  runtime: python3
+annotations:
+  read_only: true
+  idempotent: true

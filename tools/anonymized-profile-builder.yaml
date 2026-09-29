@@ -1,14 +1,18 @@
-name: "anonymized-profile-builder"
+name: anonymized-profile-builder
+version: 1.0.0
 description: "Removes personal demographic markers from resume text to prevent bias"
-version: "0.1.0"
-runtime:
-  language: "python"
-  entrypoint: "anonymized_profile_builder.py"
-parameters:
-  type: "object"
+input_schema:
+  type: object
   properties:
     profile_text:
-      type: "string"
+      type: string
       description: "Raw resume profile string"
   required:
-    - "profile_text"
+    - profile_text
+implementation:
+  type: script
+  path: anonymized_profile_builder.py
+  runtime: python3
+annotations:
+  read_only: true
+  idempotent: true
