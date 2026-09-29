@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "align_compensation_range",
+  "description": "Checks candidate salary expectations against budgeted compensation band",
+  "type": "object",
+  "properties": {
+    "salary_json": {
+      "type": "string",
+      "description": "JSON with expectation_usd, band_min, band_max"
+    }
+  },
+  "required": [
+    "salary_json"
+  ]
+}

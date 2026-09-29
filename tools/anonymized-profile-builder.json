@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "build_anonymized_profile",
+  "description": "Removes personal demographic markers from resume text to prevent bias",
+  "type": "object",
+  "properties": {
+    "profile_text": {
+      "type": "string",
+      "description": "Raw resume profile string"
+    }
+  },
+  "required": [
+    "profile_text"
+  ]
+}

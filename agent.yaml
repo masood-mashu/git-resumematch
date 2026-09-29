@@ -1,0 +1,25 @@
+spec_version: "0.1.0"
+name: "git-resumematch"
+version: "0.1.0"
+description: "Autonomous Candidate Competency Matching, Anonymized Profile Building & Bias-Free Screening Agent"
+framework: "opengap"
+authors:
+  - name: "masood-mashu"
+    email: "masoodmashu03@gmail.com"
+license: "Apache-2.0"
+
+runtime:
+  language: "python"
+  version: ">=3.10"
+  timeout: 120
+
+tags:
+  - hr-recruiting
+  - resume-screening
+  - bias-free-hiring
+  - skill-matching
+  - passport-challenge
+
+metadata:
+  passport_id: "aps-resumematch-01"
+  passport_category: "HR & recruiting"

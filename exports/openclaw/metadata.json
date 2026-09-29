@@ -1,0 +1,13 @@
+{
+  "format": "openclaw",
+  "agent": "git-resumematch",
+  "title": "GitResumeMatch",
+  "category": "HR & recruiting",
+  "version": "0.1.0",
+  "visa_status": "EARNED",
+  "checkpoint_support": [
+    "01",
+    "02",
+    "03"
+  ]
+}

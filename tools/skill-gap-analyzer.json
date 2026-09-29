@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "analyze_skill_gaps",
+  "description": "Computes overlap percentage between candidate competencies and job requirements",
+  "type": "object",
+  "properties": {
+    "skills_json": {
+      "type": "string",
+      "description": "JSON with candidate_skills and required_skills lists"
+    }
+  },
+  "required": [
+    "skills_json"
+  ]
+}

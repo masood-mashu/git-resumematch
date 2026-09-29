@@ -1,0 +1,14 @@
+name: "compensation-range-aligner"
+description: "Checks candidate salary expectations against budgeted compensation band"
+version: "0.1.0"
+runtime:
+  language: "python"
+  entrypoint: "compensation_range_aligner.py"
+parameters:
+  type: "object"
+  properties:
+    salary_json:
+      type: "string"
+      description: "JSON with expectation_usd, band_min, band_max"
+  required:
+    - "salary_json"
